@@ -129,10 +129,10 @@
 			Law and Economics, Political Economy, Public Finance, Computational Linguistics, Machine Learning.
 			</p>
 			<ul>
-				<li><b>One</b>: .</li>
-				<li><b>two</b>: .</li>
+				<li><b>Law</b>: Training and research in tax law.</li>
+				<li><b>NLP</b>: Extracting information from plain text, including laws/judgments.</li>
 
-				<li><b>three</b>: .</li>
+				<li><b>Data</b>: Specialize in large datasets of laws and metadata.</li>
 				
 			</ul>
 			</section>
@@ -189,10 +189,10 @@
 			<h2>Context : </h2>
 			</p>
 			<ul>
-				<li><b></b> Measurement of intergenerational  social mobility is very important.</li>
-				<li><b></b>Requirements on data to measure social mobility are very high.</li>
+				<li><b></b> Measurement of intergenerational  social mobility is important.</li>
+				<li><b></b> Strict requirements on data to measure social mobility .</li>
 
-				<li> There does not exist income mobility indexes for France based on both parent's and children income.</li>
+				<li> No available income mobility indices for France based on both parents' and children's income.</li>
 			</ul>
 			<!-- <br>
 			<br>
@@ -232,7 +232,7 @@
 		<section data-markdown  style = "text-align: left;">
 		## Goal:
 				1. Provide measures of intergenerational mobility for France based on parents'/children's taxable income.
-				1. Build on these mobility indexes to perform more advanced analysis based on geographical analysis.
+				1. Build on these mobility indices to perform more advanced analysis based on geographical analysis.
 
 		 
 		</section>
@@ -246,9 +246,9 @@
 		</section>
 
 		<section data-markdown  style = "text-align: left;">
-				1. Data were for long not available to analyze intergenerational income mobility.
-				1. Recent improvements in access to administrative data provide studies measuring precisely intergenerational income mobility.([Bratberg et al., 2005](); [Chetty et al., 2014](); [Corak, 2019](); [Acciari et al., 2019]()).
-				1. Some of these studies use varation between localities to identify factors linked with internerational income mobility.
+				1. Data were only recently available to analyze intergenerational income mobility.
+				1. Recent improvements in access to administrative data now allow precise measurements of intergenerational income mobility.([Bratberg et al., 2005](); [Chetty et al., 2014](); [Corak, 2019](); [Acciari et al., 2019]()).
+				1. Some of these studies use varations between localities to identify factors linked with intergenerational income mobility.
 		</section>
 
 		<section data-markdown  style = "text-align: center;">
@@ -256,11 +256,11 @@
 		</section>
 
 		<section data-markdown  style = "text-align: left;">
-				* Studies on equality of opportunities (Lefranc et al., 2009), or on income mobility (Poncelet et al., 2016) exists.
+				* Studies on equality of opportunities (Lefranc et al., 2009), or on income mobility (Poncelet et al., 2016) exist.
 				* Some using geographic variation (Dherbécourt, 2015; Kenedi and Dherbécourt, 2017).  
 
 
-				None of these use linked data on parent's on children's income.
+				None of these use linked data on parent's and children's income.
 		</section>
 	</section>
 	<section data-background= "#cddcdd">
@@ -277,7 +277,7 @@
 		## Data
 		We use the Échantillon Démographique Permanent (EDP).
 		* A blend of administrative data and surveys.
-		* Contains income tax return data for a large sample of individual since 2011.
+		* Contains income tax return data for a large sample of individuals since 2011.
 		* Allows following over time individuals born at specific dates.
 		</section> -->
 		<section data-markdown  style = "text-align: left;font-size:90%;">
@@ -287,7 +287,7 @@
 		* Contains income tax return data for a large sample of individual since 2011.
 		* Allows following over time individuals born at specific dates.
 		* The sample size is approximately 15,000 households per year.
-		* Contains many variables including, precise localization, civil registry data, diplomas, etc.
+		* Contains many variables including precise localization, civil registry data, diplomas, etc.
 		</section>
 
 		<section data-markdown  style = "text-align: left;">
@@ -302,7 +302,7 @@
 		<section data-markdown  style = "text-align: left;font-size:90%;">
 		## Intergenerational Mobility Measures
 		IGE: 
-		$$IGE = Cor(log \; y_i , log \; y_i^p) \frac{SD(log \; y_i)}{SD(log \; y_i^p)}$$
+		$$IGE = Corr(log \; y_i , log \; y_i^p) \frac{SD(log \; y_i)}{SD(log \; y_i^p)}$$
 		Rank-Rank Slope: 
 			 	$$R_i = \alpha + \beta R_i^p + \epsilon_i$$  
 		Absolute Upward Mobility: $$\mathbb{E}[R_i | R_i^p < 50] $$  
@@ -357,17 +357,17 @@
 		</section>
 		<section data-markdown style = "text-align: left;">
 			## Other Avenues:
-			* Populist Voting and Mobility.
-			* Distance to University and mobility.
-			* Income Mobility in the Families of Immigrants and  Natives ([Abramitzky et al. (2019)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3476488)).
+			* Populist voting and mobility.
+			* Distance to university and mobility.
+			* Income mobility in the families of immigrants and  natives ([Abramitzky et al. (2019)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3476488)).
 			
 		</section>
 		<section data-markdown style = "text-align: left;">
 			## Expected impact:
-			* Understanding the determinant of poor mobility.
-			* International comparability of intergenerational income mobility
-			* Study focused on France but will more generally shed light on the  mechanisms of mobility.
-			* TODO
+			* Some of the first evidence outside U.S. on intergenerational mobility.
+			* Preliminary evidence suggests France <b>not</b> more mobile than U.S.
+			* Focused on France but will provide more general insights on mechanisms of mobility.
+			* New evidence on links between bankrupcty and mobility.
 		</section>
 	</section>
 	<section data-background="#cddcdd">
@@ -377,7 +377,7 @@
 			<section data-markdown style = "text-align: left;">
 			## Use of fundings:
 			* Data access (SD-BOX from the CASD, 6552 euros)
-			* Postdoctorate researcher : working at X% for M months
+			* Postdoctorate researcher: working at 50% for 12 months (23448 euros)
 			</section>
 		<section data-markdown style = "text-align: left;font-size:81%;">
 			## Research agenda (12 months):
@@ -389,7 +389,7 @@
 			* Months 8-12:
 				* writing a draft
 				* presenting a first version of the paper
-				* applying to internation conferences
+				* applying to international conferences
 		</section>
 
 
