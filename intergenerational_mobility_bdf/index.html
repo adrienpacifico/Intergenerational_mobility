@@ -71,9 +71,13 @@
 			## Roadmap:  
 			1. Our Team
 			2. The project
-			3. Results 
-			4. Planned extensions
-			5. Questions
+			3. State of the Art
+			4. Data and Methodology
+			5. Results
+			1. Use of fundings
+			1. Expected impact
+
+			Our Team, Project, State of the Art, Data and Methodology, Results, Second step analysis
 			</section>
 		</section>
 	<section data-background="#cddcdd">
@@ -282,6 +286,7 @@
 		* Contains income tax return data for a large sample of individual since 2011.
 		* Allows following over time individuals born at specific dates.
 		* The sample size is approximately 15,000 households per year.
+		* Contains many variables including, precise localization, civil registry data, diplomas, etc.
 		</section>
 
 		<section data-markdown  style = "text-align: left;">
@@ -313,20 +318,25 @@
 		</section>
 		<section data-background-iframe="./plotly_express_mobility.html" data-background-interactive>
 		</section>
-		<section data-background="#dddddd"><iframe class="stretch" src="./plotly_express_mobility.html" >
+		<!-- <section data-background="#dddddd"><iframe class="stretch" src="./plotly_express_mobility.html" >
 		</iframe>
-		</section>
+		</section> -->
 		<section data-markdown style = "text-align: left;">
 		## Overall results:  
 		* Upward mobility of 40.9% in France (41.57% in the US)
 		* "American Dream" metric of 2.5% (8.22% in the US)
+		</section>
+		<section data-markdown style = "text-align: left;">
+		## Open Science:  
+		* [Github repository](https://github.com/adrienpacifico/Intergenerational_mobility)
+		* Binder Link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/adrienpacifico/Intergenerational_mobility/master?filepath=map_version_1.ipynb)
 			 
 			
 		</section>
 	</section>
 	<section data-background="#cddcdd">
 		<section data-markdown style = "text-align: center;">
-				## Further Analysis:
+				## Second Step Analysis:
 		</section>
 		<section data-markdown style = "text-align: left;">
 				## Mobility and Bankruptcy:
@@ -340,14 +350,52 @@
 				* We intend to estimate the following model for a locality $i$:  
 
 					$$\boxed{y_i = \beta_0 + \beta X_i + \beta_1 \text{intergenerational mobility}_i + \epsilon_i}$$
+
+					* $y_i$: bankruptcy rate
+					* $X_i$: set of local control variables (e.g. unemployment, activity and poverty rate)
 		</section>
 		<section data-markdown style = "text-align: left;">
-			## Other projects:
+			## Other Avenues:
 			* Populist Voting and Mobility.
 			* Distance to University and mobility.
 			* Income Mobility in the Families of Immigrants and  Natives ([Abramitzky et al. (2019)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3476488)).
 			
 		</section>
+		<section data-markdown style = "text-align: left;">
+			## Expected impact:
+			* Understanding the determinant of poor mobility.
+			* International comparability of intergenerational income mobility
+			* Study focused on France but will more generally shed light on the  mechanisms of mobility.
+			* TODO
+		</section>
+	</section>
+	<section data-background="#cddcdd">
+		<section data-markdown style = "text-align: center;">
+			## Organisational details
+		</section>
+			<section data-markdown style = "text-align: left;">
+			## Use of fundings:
+			* Data access (SD-BOX from the CASD, 6552 euros)
+			* Postdoctorate researcher : working at X% for M months
+			</section>
+		<section data-markdown style = "text-align: left;font-size:81%;">
+			## Research agenda (12 months):
+			* Months 1-5: 
+				1. computing the intergenerational mobility measures
+				1. online browser app with maps illustrating the measures
+				1. data steps on the bankruptcy data (to prepare the merge with mobility measures)
+			* Months 6-7: Producing the results (regression tables and figures)
+			* Months 8-12:
+				* writing a draft
+				* presenting a first version of the paper
+				* applying to internation conferences
+		</section>
+		<section data-markdown style = "text-align: left;">
+			## Research agenda (12 months):
+			* Data access (SD-BOX from the CASD, 6552 euros)
+			* Postdoctorate researcher : working at X% for M months
+		</section>
+
 	</section>
 
 
