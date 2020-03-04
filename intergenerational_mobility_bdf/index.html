@@ -124,10 +124,10 @@
 			Law and Economics, Political Economy, Public Finance, Computational Linguistics, Machine Learning.
 			</p>
 			<ul>
-				<li><b>March 2011</b>: François Hollande has declared himself as a candidate to the French presidency.</li>
-				<li><b>October 2011</b>: François Hollande won the left primary.</li>
+				<li><b>One</b>: .</li>
+				<li><b>two</b>: .</li>
 
-				<li><b>January 2012</b>: He conveys the idea of the reform in unprecised manner.</li>
+				<li><b>three</b>: .</li>
 				
 			</ul>
 			</section>
@@ -140,7 +140,7 @@
 			</p>
 			<ul>
 				<li><b>Data</b>: Has worked with large administrative datasets (POTE, DADS).</li>
-				<li><b>Past experiences</b>: bla bla bla.</li>
+				<li><b>Past experiences</b>: Has worked on many successfull team projects (IPP, WID) .</li>
 
 				<li><b>Tools</b>: Stata, Python, gensim.</li>
 				
@@ -165,7 +165,7 @@
 			</p>
 			<ul>
 				<li><b></b> We are experienced with working on large administrative datasets.</li>
-				<li><b></b> We know well the French system.</li>
+				<li><b></b> We know the French system well.</li>
 
 				<li> We use cutting edge technologies that are efficient, open source, and very compatible with the best open science standards .</li>
 				
@@ -189,7 +189,7 @@
 
 				<li> There does not exist income mobility indexes for France based on both parent's and children income.</li>
 			</ul>
-			<br>
+			<!-- <br>
 			<br>
 				<style> .disclosure {
 					color: #041135;
@@ -209,31 +209,98 @@
 					  <br>
 					  2) to provide the first French measurement of income intergenerational mobility for France.</font>
 					</justify>
-					</div>
+					</div> -->
 
 		</section>
 
 
 
 
-		<section data-markdown  style = "text-align: left;">
+		<!-- <section data-markdown  style = "text-align: left;">
 		## Context:
 		* Measurement of intergenerational  social mobility is very important.
 		* Requirements on data to measure social mobility are very high.
 		* There does not exist income mobility indexes for France based on both parent's and children income.
 		<div class="post-single clearfix">
 		<div class="disclosure"><strong>Disclosure:</strong> Your support helps keep the site running! We earn a referral fee for some of the services we recommend on this page. <a href="/disclosure/">Learn more</a></div>
-		</section>
+		</section> -->
 		<section data-markdown  style = "text-align: left;">
 		## Goal:
-		Make reliable measure of intergenerational mobility for France based on parents'/children taxable income.
+				1. Provide measures of intergenerational mobility for France based on parents'/children's taxable income.
+				1. Build on these mobility indexes to perform more advanced analysis based on geographical analysis.
+
+		 
+		</section>
+	</section>
+	<section data-background= "#cddcdd">
+		<section data-markdown  style = "text-align: center;">
+		## State of the Art
+
+
+		 
+		</section>
+
+		<section data-markdown  style = "text-align: left;">
+				1. Data were for long not available to analyze intergenerational income mobility.
+				1. Recent improvements in access to administrative data provide studies measuring precisely intergenerational income mobility.([Bratberg et al., 2005](); [Chetty et al., 2014](); [Corak, 2019](); [Acciari et al., 2019]()).
+				1. Some of these studies use varation between localities to identify factors linked with internerational income mobility.
+		</section>
+
+		<section data-markdown  style = "text-align: center;">
+		## What about France?
+		</section>
+
+		<section data-markdown  style = "text-align: left;">
+				* Studies on equality of opportunities (Lefranc et al., 2009), or on income mobility (Poncelet et al., 2016) exists.
+				* Some using geographic variation (Dherbécourt, 2015; Kenedi and Dherbécourt, 2017).  
+
+
+				None of these use linked data on parent's on children's income.
+		</section>
+	</section>
+	<section data-background= "#cddcdd">
+		<section data-markdown  style = "text-align: center;">
+		## Data and Methodology
+		</section>
+		<!-- <section data-markdown  style = "text-align: left;">
+		## Idea
+		* Observe parent's income while their children are tax-dependent.
+		* Observe children's income several years later.
+		* Compute intergenerational income mobility metrics.
+		</section> -->
+		<section data-markdown  style = "text-align: left;">
+		## Data
+		We use the Échantillon Démographique Permanent (EDP).
+		* A blend of administrative data and surveys.
+		* Contains income tax return data for a large sample of individual since 2011.
+		* Allows following over time individuals born at specific dates.
 		</section>
 		<section data-markdown  style = "text-align: left;">
-		# Metrics  
+		## Dataset
+		We use the Échantillon Démographique Permanent (EDP).
+		* A blend of administrative data and surveys.
+		* Contains income tax return data for a large sample of individual since 2011.
+		* Allows following over time individuals born at specific dates.
+		* The sample size is approximately 15,000 households per year.
+		</section>
+
+		<section data-markdown  style = "text-align: left;">
+		## Measuring parents' and children's income.
+		1. We observe parent's income while their tax-dependent children, aged 16-18 years old, live with them.
+		1. We measure children's income five years later (aged 21-23 years old).
+		</section>
+
+
+
+
+		<section data-markdown  style = "text-align: left;font-size:90%;">
+		## Intergenerational Mobility Measures
+		IGE: 
+		$$IGE = Cor(log \; y_i , log \; y_i^p) \frac{SD(log \; y_i)}{SD(log \; y_i^p)}$$
 		Rank-Rank Slope: 
 			 	$$R_i = \alpha + \beta R_i^p + \epsilon_i$$  
 		Absolute Upward Mobility: $$\mathbb{E}[R_i | R_i^p < 50] $$  
-			 Q1-Q5 (American Dream): $$\mathbb{E}[Q = 5 |Q^p = 1] $$  
+		Q1-Q5 (American Dream): $$\mathbb{E}[Q = 5 |Q^p = 1] $$  
 		</section>
 	
 
@@ -244,26 +311,45 @@
 		<section data-markdown>
 			### (Preliminary) Results
 		</section>
-		<section data-markdown>
-			# We linked children aged 16 to 18 to  xxx
-		</section>
 		<section data-background-iframe="./plotly_express_mobility.html" data-background-interactive>
 		</section>
 		<section data-background="#dddddd"><iframe class="stretch" src="./plotly_express_mobility.html" >
-				  </iframe>
+		</iframe>
+		</section>
+		<section data-markdown style = "text-align: left;">
+		## Overall results:  
+		* Upward mobility of 40.9% in France (41.57% in the US)
+		* "American Dream" metric of 2.5% (8.22% in the US)
+			 
+			
+		</section>
+	</section>
+	<section data-background="#cddcdd">
+		<section data-markdown style = "text-align: center;">
+				## Further Analysis:
+		</section>
+		<section data-markdown style = "text-align: left;">
+				## Mobility and Bankruptcy:
+				* We will use the _Banque de France_ database of bankruptcy cases (MUSES).
+					* Individual bankruptcy cases
+					* 100,000 new observations per year
+					* Rich variables (income and capital of the debtor, age, sociodemographic characteristics, precise location of housing)
+		</section>
+		<section data-markdown style = "text-align: center;font-size:81%;">
+				## Mobility and Bankruptcy:
+				* We intend to estimate the following model for a locality $i$:  
+
+					$$\boxed{y_i = \beta_0 + \beta X_i + \beta_1 \text{intergenerational mobility}_i + \epsilon_i}$$
+		</section>
+		<section data-markdown style = "text-align: left;">
+			## Other projects:
+			* Populist Voting and Mobility.
+			* Distance to University and mobility.
+			* Income Mobility in the Families of Immigrants and  Natives ([Abramitzky et al. (2019)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3476488)).
+			
 		</section>
 	</section>
 
-	<section data-background="#cddcdd"><!-- IR & QF -->
-		<section data-markdown>
-			### Institutional Background
-		</section>
-		<section data-markdown style = "text-align: left;">
-			The reform we are going to look at is a lowering of a ceiling that determines the maximum per child tax-deduction.  
-
-			It happened twice in 2012 and 2013. The per child maximum tax-break has been shifted from 2336 € to 2000 and then to 1500 €.
-			
-		</section>
 
 	
 
