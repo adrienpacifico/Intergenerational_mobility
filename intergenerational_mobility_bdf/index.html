@@ -249,16 +249,19 @@
 				1. Some of these studies use varations between localities to identify factors linked with intergenerational income mobility.
 		</section>
 
-		<section data-markdown  style = "text-align: center;">
+		<section data-markdown  style = "text-align: center;data-separator-notes="^Note:">
 		## What about France?
 		</section>
 
-		<section data-markdown  style = "text-align: left;">
+		<section data-markdown  style = "text-align: left;data-separator-notes="^Note:">
 				* Studies on equality of opportunities ([Lefranc et al., 2009]()), or on income mobility ([Poncelet et al., 2016]()) exist.
 				* Some using geographic variation ([Dherbécourt, 2015](); [Kenedi and Dherbécourt, 2017]()).  
 
 
-				None of these use linked data on parent's and children's income.
+				None of these use linked data on parent's and children's income.  
+
+Note:
+				Use proxies for income, for example by social status (five or nine categories)
 		</section>
 	</section>
 	<section data-background= "#cddcdd">
@@ -297,7 +300,7 @@
 
 
 
-		<section data-markdown  style = "text-align: left;font-size:70%;">
+		<section data-markdown  style = "text-align: left;font-size:70%;data-separator-notes="^Note:">
 		## Intergenerational Mobility Measures
 		IGE: 
 		$$IGE = Corr(log \; y_i , log \; y_i^p) \frac{SD(log \; y_i)}{SD(log \; y_i^p)}$$
@@ -307,7 +310,18 @@
 		Q1-Q5 (American Dream): $$\mathbb{E}[Q = 5 |Q^p = 1] $$   
 		_____________________________
 		* $y_i$ is child income; $y_i^p$ parents income
-		* $R_i$ child rank;  $R_i$ parents rank
+		* $R_i$ child percentile rank;  $R_i$ parents rank
+		* $Q$ child quintile rank;  $Q_i$ parents rank
+
+		Note: 
+			IGE : intergenerational income elasticity  
+				*  Captures the elasticity of child income with respect to parental income
+				* An IGE of 0.5, for example, means that a 20 pct differ- ential in parental income translates into a 10 pct differential in child income.  
+			Rank-Rank Slope :  
+
+			 	* a$\alpha$ measures the expected rank of botom of the distribution children  
+				* $\beta$ correlation strenght between children and parents income.
+
 
 		</section>
 	
@@ -327,7 +341,7 @@
 		<section data-markdown style = "text-align: left;">
 		## Overall results:  
 		* Upward mobility of 40.9% in France (41.57% in the US)
-		* "American Dream" metric of 2.5% (8.22% in the US)
+		* "American Dream" metric of 7.69% (8.22% in the US)
 		</section>
 		<section data-markdown style = "text-align: left;">
 		## Open Science:  
@@ -341,13 +355,16 @@
 		<section data-markdown style = "text-align: center;">
 				## Second Step Analysis
 		</section>
-		<section data-markdown style = "text-align: left;">
+		<section data-markdown style = "text-align: left;data-separator-notes="^Note:">
 				## Mobility and Bankruptcy:
 				* We will use the _Banque de France_ database of bankruptcy cases (MUSES).
 					* Individual bankruptcy cases
 					* 100,000 new observations per year
 					* Rich variables (income and capital of the debtor, age, sociodemographic characteristics, precise location of housing)
+		Note: 
+			does this do it?
 		</section>
+
 		<section data-markdown style = "text-align: center;font-size:81%;">
 				## Mobility and Bankruptcy:
 				* We intend to estimate the following model for a locality $i$:  
