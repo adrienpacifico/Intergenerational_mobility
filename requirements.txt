@@ -1,8 +1,11 @@
+chart_studio
 ipykernel
 ipython
 ipywidgets
 Jinja2
 jupyter
+matplotlib
 notebook
 pandas
 plotly
+statsmodels
